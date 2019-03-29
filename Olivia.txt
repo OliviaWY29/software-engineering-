@@ -1,0 +1,40 @@
+
+UC-7. Send store code: The system receives the order information, and sends the QR code back.
+UC-8. Scan store code: The cabinet scans the QR code.
+UC-9. Open cabinet: The cabinet recognizes the QR code successfully and opens the cabinet.
+
+Use Case UC-£¨7£©Send storage code
+Use Case UC-£¨7£©Send storage code
+Related Requirement¡¯s:REQ5, REQ8, table1-2
+Initiating Actor: All of: senders
+Actor¡¯s Goal: let the sender to take the food or takeout into the cabinet.
+Participating Actors: data processing center, information system
+Preconditions: The receivers have finished the order information.
+Post conditions: The system get the behavior and send the storage code, and let the senders take the food of takeout into the cabinet.
+Flow of Events for Main Success Scenario: The receivers wrote the order information, the system understood the meaning and send storage code to the senders, and the senders will use the storage code to open the cabinet¡¯s door.
+
+
+Use Case UC-£¨8£©scan the storage code
+Use Case UC-£¨8£©scan the storage code
+Related Requirement¡¯s: REQ5, REQ8, table1-2
+Initiating Actor: All of: senders
+Actor¡¯s Goal: the senders want to take the food or takeout into the cabinet.
+Participating Actors: data processing center, canner, information system, 
+Preconditions: The senders get the storage code
+Post conditions: The cabinet¡¯s door is opened.
+Flow of Events for Main Success Scenario: The senders get the code; he goes to the cabinet and scans the storage code. The system confirm the behavior, and open the door.
+
+
+
+
+
+Use Case UC-£¨9£©Open your own cabinet
+Use Case UC-£¨9£©Open your own cabinet
+Related Requirement¡¯s:REQ5, REQ8, table1-2
+Initiating Actor: Any of: recipients
+Actor¡¯s Goal: Get the own food and takeout
+Participating Actors: cabinet, door of the, scanner, system, data Processing Center
+Preconditions: Recipients got the fetch code and scan the QR code.
+Post conditions: The door opened.
+Flow of Events for Main Success Scenario: The recipients got the message and use the fetch code to scan the QR code. The system will confirm the behavior. The recipients open the door.
+
